@@ -1,0 +1,62 @@
+/**
+ * Kategorieanzeige Drop
+ * @docs https://kreativkonzentrat.de/Wiki?page=dropper/dev/config
+ * @generator https://kreativkonzentrat.de/Drop-Builder
+ */ 
+{
+	"name": "Kategorieanzeige",
+	"description": "Erzeugt Kacheln der ausgewählten Kategorie",
+	"version": "1.0.0",
+	"builder": {
+		"namespace": "GOE"
+	},
+	"settings": [
+		{
+			"type": "text",
+			"name": "Überschrift",
+			"description": "Die Überschrift über den Kacheln",
+			"property": "headline"
+		},
+		{
+			"type": "text",
+			"name": "Einleitungstext",
+			"description": "Ein kurzer Text über den Kacheln",
+			"property": "text"
+		},
+		{
+			"type": "link",
+			"name": "Link",
+			"description": "Klassicher Button nach allen Kacheln",
+			"property": "link"
+		},
+		{
+			"type": "multiselect",
+			"name": "Kategorien",
+			"description": "welche Kategorien sollen angezeigt werden?",
+			"property": "kategs",
+			"options": "Categories"
+		},
+		{
+			"type": "text",
+			"name": "CSS-Klassen",
+			"description": "Klassen der Kacheln (default: col-6 col-md-4 col-lg-3 - wird überschrieben wenn befüllt)",
+			"property": "classes"
+		},
+		{
+			"type": "select",
+			"options": [
+				{
+					"label": "Kategorie ausblenden",
+					"value": "hide"
+				},
+				{
+					"label": "Kategorie anzeigen",
+					"value": "show"
+				}
+			],
+			"name": "Verhalten bei leerem Bild",
+			"description": "Steuert was passiert wenn kein Bild vorhanden ist",
+			"property": "noimg"
+		}
+	]
+}

@@ -1,0 +1,149 @@
+/**
+ * HeaderGrid Drop
+ * @docs https://kreativkonzentrat.de/Wiki?page=dropper/dev/config
+ * @generator https://kreativkonzentrat.de/Drop-Builder
+ */ 
+{
+	"name": "HeaderGrid",
+	"description": "Stellt ein großes und bis zu drei kleine Elemente bereit",
+	"version": "1.0.0",
+	"builder": {
+		"namespace": "GOE"
+	},
+	"settings": [
+		{
+			"type": "list",
+			"itemSettings": [
+				{
+					"type": "text",
+					"name": "Überschrift",
+					"description": "die Überschrift des Teasers",
+					"property": "headline"
+				},
+				{
+					"type": "text",
+					"name": "Subheadline",
+					"description": "die Unter-Überschrift",
+					"property": "subhead"
+				},
+				{
+					"type": "html",
+					"name": "Beschreibungstext",
+					"description": "der Beschreibungstext (nur Desktop)",
+					"property": "description"
+				},
+				{
+					"type": "link",
+					"name": "Verlinkung",
+					"description": "der Link des Teasers",
+					"property": "link"
+				},
+				{
+					"type": "upload",
+					"name": "Bild",
+					"description": "das Hintergrundbild",
+					"property": "bgimg"
+				},
+				{
+					"type": "select",
+					"name": "Hintergrundfarbe",
+					"description": "die Hintergrundfarbe des Teasers",
+					"property": "bgcol",
+					"options": [
+						{
+							"label": "weiß",
+							"value": "bg-white"
+						},
+						{
+							"label": "schwarz",
+							"value": "bg-black"
+						},
+						{
+							"label": "blau",
+							"value": "bg-primary"
+						},
+						{
+							"label": "Verlauf",
+							"value": "bg-gradient"
+						}
+					]
+				},
+				{
+					"type": "select",
+					"options": [
+						{
+							"label": "ja, zeigen",
+							"value": "doshowb"
+						},
+						{
+							"label": "nein, nicht zeigen",
+							"value": "donotshowb"
+						}
+					],
+					"name": "Badge anzeigen?",
+					"description": "Steuert ob ein rundes Badge angezeigt werden soll",
+					"property": "showbadge"
+				},
+				{
+					"type": "text",
+					"name": "Badge-Text",
+					"condition": "self.showbadge === \"doshowb\"",
+					"description": "den Text im runden Badge",
+					"property": "badgetext"
+				},
+				{
+					"type": "select",
+					"name": "Badge Farbe",
+					"description": "die Hintergrundfarbe des Badges",
+					"property": "self.showbadge === \"doshowb\"",
+					"options": [
+						{
+							"label": "weiß",
+							"value": "bg-white text-primary"
+						},
+						{
+							"label": "blau",
+							"value": "bg-primary text-white"
+						},
+						{
+							"label": "Verlauf",
+							"value": "bg-gradient text-white"
+						},
+						{
+							"label": "grün",
+							"value": "bg-success text-white"
+						},
+						{
+							"label": "rot",
+							"value": "bg-danger text-white"
+						},
+						{
+							"label": "schwarz",
+							"value": "bg-black text-white"
+						}
+					]
+				},
+				{
+					"type": "select",
+					"options": [
+						{
+							"label": "nein",
+							"value": "nomargin"
+						},
+						{
+							"label": "ja",
+							"value": "mt-n3"
+						}
+					],
+					"name": "Bild überstehen lassen?",
+					"description": "steuert ob das ausgewählte Bild übersteht - nur empfohlen für Bilder mit Transparenz-Effekt",
+					"property": "negativeMargin"
+				}
+			],
+			"itemDefaults": {},
+			"name": "Teaser",
+			"description": "legt einen neuen Teaser an",
+			"property": "teaser"
+		}
+	]
+}

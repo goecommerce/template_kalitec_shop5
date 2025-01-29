@@ -1,0 +1,135 @@
+// Lädt Critical CSS aus dem Nova
+
+// Lädt Core-Funktionen
+@import '../../../../NOVA/themes/base/sass/functions';
+
+// Lädt "my-nova"-Variablen. Hier können Variablen aus Bootstrap und dem clear-Theme überschrieben werden.
+@import "variables";
+
+// Lädt kritische Style Angaben, hier aus dem "clear"
+// @import '../../../../NOVA/themes/blackline/sass/blackline_crit.scss';
+@import '../../../../NOVA/themes/clear/sass/clear_crit.scss';
+// @import '../../../../NOVA/themes/midnight/sass/midnight_crit.scss';
+
+// START my CSS for Child-theme
+
+/* poppins-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/templates/goeKalitec/themes/kalitec/fonts/poppins-v21-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/templates/goeKalitec/themes/kalitec/fonts/poppins-v21-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/templates/goeKalitec/themes/kalitec/fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/templates/goeKalitec/themes/kalitec/fonts/poppins-v21-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/templates/goeKalitec/themes/kalitec/fonts/poppins-v21-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/templates/goeKalitec/themes/kalitec/fonts/poppins-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/templates/goeKalitec/themes/kalitec/fonts/poppins-v21-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/templates/goeKalitec/themes/kalitec/fonts/poppins-v21-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-family: 'kalicon';
+  src:  url('/templates/goeKalitec/themes/kalitec/fonts/kalicons.eot?9cv74y');
+  src:  url('/templates/goeKalitec/themes/kalitec/fonts/kalicons.eot?9cv74y#iefix') format('embedded-opentype'),
+    url('/templates/goeKalitec/themes/kalitec/fonts/kalicons.ttf?9cv74y') format('truetype'),
+    url('/templates/goeKalitec/themes/kalitec/fonts/kalicons.woff?9cv74y') format('woff'),
+    url('/templates/goeKalitec/themes/kalitec/fonts/kalicons.svg?9cv74y#kalicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.la-heart-outline,
+.la-service,
+.la-submit {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'kalicon' !important;
+  speak: never;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+b, strong {
+    font-weight:600;
+}
+#main-wrapper .slick-prev::after {
+  content: '\f104' !important;
+  font-family: "Line Awesome Free" !important;
+}
+#main-wrapper .slick-next::after {
+  content: '\f105' !important;
+  font-family: "Line Awesome Free" !important;
+}
+
+#maintenance-mode {
+    position:fixed;
+    left:1rem;
+    right:1rem;
+    bottom:1rem;
+    font-size:12px;
+    z-index:21337;
+}

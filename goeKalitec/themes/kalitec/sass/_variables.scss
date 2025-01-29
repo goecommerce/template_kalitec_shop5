@@ -1,0 +1,79 @@
+/*
+ /$$   /$$  /$$$$$$  /$$       /$$$$$$ /$$$$$$$$ /$$$$$$$$  /$$$$$$ 
+| $$  /$$/ /$$__  $$| $$      |_  $$_/|__  $$__/| $$_____/ /$$__  $$
+| $$ /$$/ | $$  \ $$| $$        | $$     | $$   | $$      | $$  \__/
+| $$$$$/  | $$$$$$$$| $$        | $$     | $$   | $$$$$   | $$      
+| $$  $$  | $$__  $$| $$        | $$     | $$   | $$__/   | $$      
+| $$\  $$ | $$  | $$| $$        | $$     | $$   | $$      | $$    $$
+| $$ \  $$| $$  | $$| $$$$$$$$ /$$$$$$   | $$   | $$$$$$$$|  $$$$$$/
+|__/  \__/|__/  |__/|________/|______/   |__/   |________/ \______/ 
+                                                                    
+                                                                    
+                                                                    
+*/
+/* colors */
+
+$primary:           #034974;
+$dark:              #333333;
+$green:             #588600;
+$blue:              #85B7F2;
+$blue-darker:       #418CBA;
+$red:               #E80000;
+$yellow:            #FFD800;
+$gray:              #929FAA;
+$gray-light:        #D2D7DB;
+$gray-lighter:      #EDEFF1;
+$gray-dark:         #556A80;
+$gray-darker:       #8293A2;
+$gray-lighte:       #DBDFE1;
+$grey:              $gray;
+$grey-light:        $gray-light;
+$grey-lighte:       $gray-lighte;
+$grey-lighter:      $gray-lighter;
+$grey-dark:         $gray-dark;
+$grey-darker:       $gray-darker;
+$hr-border-color:   #94a0ad;
+
+$success:           $green;
+$warning:           $yellow;
+$danger:            $red;
+$notice:            $gray;
+$info:              $blue;
+
+$bg-primary:        $primary;
+$bg-success:        $success;
+$bg-warning:        $warning;
+$bg-danger:         $danger;
+$bg-notice:         $notice;
+$bg-info:           $info;
+$bg-dark:           $dark;
+
+/* fonts */
+$monospace:         monospace;
+$font-family-sans-serif:            'Poppins', sans-serif;
+$font-accent:                       'Poppins', sans-serif;
+
+$font-weight-lighter		: 200;
+$font-weight-light			: 300;
+$font-weight-normal			: 400;
+$font-weight-semibold		: 500;
+$font-weight-bold			: 600;
+$font-weight-bolder			: 700;
+$font-weight-boldest		: 800;
+$font-weight-black  		: 900;
+
+$headings-font-family:              $font-accent;
+$headings-font-weight:              $font-weight-bold;
+$headings-color:                    $primary;
+
+$border-radius:                 0;
+$border-radius-dropdown:        0;
+
+// Lädt Theme-Variablen, hier aus dem "clear"
+// @import '../../../../NOVA/themes/blackline/sass/variables';
+@import '../../../../NOVA/themes/clear/sass/variables';
+// @import '../../../../NOVA/themes/midnight/sass/variables';
+
+// passt die Pfade an
+$nova-theme-path:                   "../../../NOVA/themes";
+$fa-font-path:                      "../../../NOVA/themes/base/fontawesome/webfonts";

@@ -1,0 +1,71 @@
+@import '../../../../NOVA/themes/base/nouislider.min';
+@import '../../../../NOVA/themes/base/slick/slick-lightbox';
+@import '../../../../NOVA/js/password/password.min';
+
+// bootstrap
+@import '../../../../NOVA/themes/base/bootstrap/scss/bootstrap.scss';
+@import '../../../../NOVA/themes/base/bootstrap-select/bootstrap-select.scss';
+
+/* consent */
+@import '../../../../NOVA/themes/base/consent/consent';
+
+// fileinput
+@import '../../../../NOVA/themes/base/fileinput/fileinput.min.scss';
+
+// wow animation
+@import '../../../../NOVA/themes/base/wow/animate';
+
+// slider
+@import '../../../../NOVA/themes/base/slider/slider';
+
+// datatables
+@import '../../../../NOVA/themes/base/DataTables/datatables.min';
+
+// theme mixins
+@import '../../../../NOVA/themes/base/sass/mixins';
+
+
+// components
+@import 'components/all';
+
+// theme base
+@import '../../../../NOVA/themes/base/sass/base';
+
+/* utilities */
+@import '../../../../NOVA/themes/base/sass/utilities/all';
+
+/* productlist */
+@import '../../../../NOVA/themes/base/sass/productlist';
+
+/* productdetails */
+@import '../../../../NOVA/themes/base/sass/productdetails';
+
+/* comparelist */
+@import '../../../../NOVA/themes/base/sass/comparelist';
+
+/* footer */
+@import '../../../../NOVA/themes/base/sass/footer';
+
+/* account */
+@import '../../../../NOVA/themes/base/sass/account';
+
+/* basket */
+@import '../../../../NOVA/themes/base/sass/basket';
+
+/* contact */
+@import '../../../../NOVA/themes/base/sass/contact';
+
+/* newsletter */
+@import '../../../../NOVA/themes/base/sass/newsletter';
+
+/* checkout */
+@import '../../../../NOVA/themes/base/sass/checkout';
+
+/* register */
+@import '../../../../NOVA/themes/base/sass/register';
+
+/* selectionwizard */
+@import '../../../../NOVA/themes/base/sass/selectionwizard';
+
+/* snippets */
+@import '../../../../NOVA/themes/base/sass/snippets';

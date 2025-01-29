@@ -1,0 +1,150 @@
+/**
+ * Support Snippet Drop
+ * @docs https://kreativkonzentrat.de/Wiki?page=dropper/dev/config
+ * @generator https://kreativkonzentrat.de/Drop-Builder
+ */ 
+{
+	"name": "Support Snippet",
+	"description": "Zeigt das Support-Snippet an und ermöglicht es Einstellungen vorzunehmen",
+	"version": "1.0.0",
+	"builder": {
+		"namespace": "GOE"
+	},
+	"stylesheets": [
+		"kalitec-support.css"
+	],
+	"scripts": [
+		"kalitec-support.js"
+	],
+	"settings": [
+		{
+			"type": "text",
+			"name": "Telefonnummer-Text",
+			"description": "die Telefonnummer die anzeiegt wird",
+			"property": "phonetext"
+		},
+		{
+			"type": "text",
+			"name": "Telefonnummer-Href",
+			"description": "Die Telefonnummer als tel:Snippet",
+			"property": "phone"
+		},
+		{
+			"type": "text",
+			"name": "geöffnet-Text",
+			"description": "Der Text, der angezeigt wird, wenn die Hotline besetzt ist",
+			"property": "opened"
+		},
+		{
+			"type": "text",
+			"name": "geschlossen Text",
+			"description": "der Text der angezeigt wird, wenn geschlossen ist",
+			"property": "closed"
+		},
+		{
+			"type": "html",
+			"name": "Beschreibungstext",
+			"description": "Das Freitextfeld unten",
+			"property": "freetext"
+		},
+		{
+			"type": "list",
+			"itemSettings": [
+				{
+					"type": "select",
+					"name": "Wochentag",
+					"description": "bitte Wochentag auswählen",
+					"property": "daystring",
+					"options": [
+						{
+							"label": "Montag",
+							"value": 1
+						},
+						{
+							"label": "Dienstag",
+							"value": 2
+						},
+						{
+							"label": "Mittwoch",
+							"value": 3
+						},
+						{
+							"label": "Donnerstag",
+							"value": 4
+						},
+						{
+							"label": "Freitag",
+							"value": 5
+						},
+						{
+							"label": "Samstag",
+							"value": 6
+						},
+						{
+							"label": "Sonntag",
+							"value": 0
+						}
+					]
+				},
+				{
+					"type": "text",
+					"name": "Name des Tages",
+					"description": "Wie heisst der Tag",
+					"property": "dayname"
+				},
+				{
+					"type": "select",
+					"options": [
+						{
+							"label": "Getrennt nach vormittags/nachmittags",
+							"value": "split"
+						},
+						{
+							"label": "Gesamt (ohne Mittagspause)",
+							"value": "union"
+						}
+					],
+					"name": "Art der Öffnungszeiten",
+					"description": "Definiert, wie geöffnet ist",
+					"property": "opentimeswitch"
+				},
+				{
+					"type": "time",
+					"name": "Öffnungszeit vormittags",
+					"description": "Wann wird vormittags geöffnet?",
+					"property": "dayopenam"
+				},
+				{
+					"type": "time",
+					"name": "Schließzeit vormittags",
+					"description": "Wann vormittags wird geschlossen?",
+					"property": "daycloseam",
+					"condition": "self.opentimeswitch == \"split\""
+				},
+				{
+					"type": "time",
+					"name": "Öffnungszeiten nachmittags",
+					"description": "Wann wird nachmittags geöffnet?",
+					"property": "dayopenpm",
+					"condition": "self.opentimeswitch == \"split\""
+				},
+				{
+					"type": "time",
+					"name": "Schließzeiten nachmittags?",
+					"description": "Wann wird nachmittags geschlossen?",
+					"property": "dayclosepm"
+				}
+			],
+			"itemDefaults": {},
+			"name": "Öffnungszeiten-Tag",
+			"description": "Füge einen Tag hinzu andem geöffnet ist",
+			"property": "serviceday"
+		},
+		{
+			"type": "link",
+			"name": "CMS Link",
+			"description": "Welche CMS Seite wird auf Klick aufgerufen?",
+			"property": "cmslink"
+		}
+	]
+}

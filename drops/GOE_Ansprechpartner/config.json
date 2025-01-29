@@ -1,0 +1,118 @@
+/**
+ * Ansprechpartner Drop
+ * @docs https://kreativkonzentrat.de/Wiki?page=dropper/dev/config
+ * @generator https://kreativkonzentrat.de/Drop-Builder
+ */ 
+{
+	"name": "Ansprechpartner",
+	"description": "Zeigt mehrere Ansprechpartner an",
+	"version": "1.0.0",
+	"builder": {
+		"namespace": "GOE"
+	},
+	"settings": [
+		{
+			"type": "text",
+			"name": "Überschrift",
+			"description": "Die Überschrift der Sektion",
+			"property": "headline"
+		},
+		{
+			"type": "list",
+			"itemSettings": [
+				{
+					"type": "upload",
+					"name": "Bild",
+					"description": "Das Foto des Ansprechpartners",
+					"property": "image"
+				},
+				{
+					"type": "text",
+					"name": "Name",
+					"description": "der angezeigte Name des Ansprechpartners",
+					"property": "name"
+				},
+				{
+					"type": "text",
+					"name": "Freitext",
+					"description": "Text über den Kontakt",
+					"property": "text"
+				},
+				{
+					"type": "link",
+					"name": "Telefon",
+					"description": "die Telefonnummer des Kontakts",
+					"property": "phone"
+				},
+				{
+					"type": "link",
+					"name": "E-Mail",
+					"description": "Die E-Mail des Kontakts",
+					"property": "mail"
+				}
+			],
+			"itemDefaults": {},
+			"name": "Ansprechpartner",
+			"description": "Legt einen Ansprechpartner an",
+			"property": "contact"
+		},
+		{
+			"type": "select",
+			"options": [
+				{
+					"label": "Kontakt-Teaser anzeigen",
+					"value": "showteaser"
+				},
+				{
+					"label": "letzten, ungeraden Kontakt ausblenden",
+					"value": "hidelast"
+				},
+				{
+					"label": "gar nichts",
+					"value": "nothing"
+				}
+			],
+			"name": "Verhalten ungerade Anzahl?",
+			"description": "Was soll bei einer ungeraden Anzahl an Kontakten passieren?",
+			"property": "unequal"
+		},
+		{
+			"type": "text",
+			"condition": "drop.unequal == \"showteaser\"",
+			"name": "Kontakt-Teaser Headline",
+			"description": "Überschrift des Teasers",
+			"property": "teaserhead"
+		},
+		{
+			"type": "link",
+			"condition": "drop.unequal == \"showteaser\"",
+			"name": "Kontakt-Teaser Link",
+			"description": "die Verlinkung des Teasers",
+			"property": "teaserlink"
+		},
+		{
+			"type": "select",
+			"condition": "drop.unequal == \"showteaser\"",
+			"options": [
+				{
+					"label": "Verlauf (Standard)",
+					"value": 1
+				},
+				{
+					"label": "Bild",
+					"value": 2
+				}
+			],
+			"name": "Teaser-Hintergrund",
+			"description": "Welchen Hintergrund soll der Teaser haben",
+			"property": "teaserbg"
+		},
+		{
+			"type": "upload",
+			"condition": "drop.teaserbg == 2",
+			"name": "Teaser-Hintergrundbild",
+			"description": "das optionale Hintergrundbild des Teasers",
+			"property": "teaserbgimg"
+		}
+	]
+}

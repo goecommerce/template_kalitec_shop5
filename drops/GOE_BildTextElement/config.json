@@ -1,0 +1,109 @@
+/**
+ * Bild Text Element Drop
+ * @docs https://kreativkonzentrat.de/Wiki?page=dropper/dev/config
+ * @generator https://kreativkonzentrat.de/Drop-Builder
+ */ 
+{
+	"name": "Bild Text Element",
+	"description": "Erzeugt ein großes Element über die gesamte Seitenbreite mit Bild und Text.",
+	"version": "1.0.0",
+	"builder": {
+		"namespace": "GOE"
+	},
+	"settings": [
+		{
+			"type": "upload",
+			"name": "Bild (mobil - 375x236)",
+			"description": "das Bild welches angezeigt werden soll",
+			"property": "image"
+		},
+		{
+			"type": "upload",
+			"name": "Bild (Desktop - 1920x650)",
+			"description": "das Bild welches angezeigt werden soll",
+			"property": "deskimage"
+		},
+		{
+			"type": "text",
+			"name": "Überschrift",
+			"description": "Die Überschrift des Elements",
+			"property": "headline"
+		},
+		{
+			"type": "text",
+			"name": "Text",
+			"description": "der Text unter der Überschrift",
+			"property": "text"
+		},
+		{
+			"type": "link",
+			"name": "Verlinkung",
+			"description": "Linkziel und Button-Text",
+			"property": "link"
+		},
+		{
+			"type": "select",
+			"options": [
+				{
+					"label": "Farbig",
+					"value": "colored"
+				},
+				{
+					"label": "Bild",
+					"value": "bgimg"
+				}
+			],
+			"name": "Hintergrund-Art",
+			"description": "Welche Art Hintergrund soll verwendet werden?",
+			"property": "bgstyle"
+		},
+		{
+			"type": "upload",
+			"condition": "self.bgstyle == \"bgimg\"",
+			"name": "Hintergrund-Bild hinter dem Text",
+			"description": "definiert das Hintergrundbild hinter dem Text",
+			"property": "backgroundImage"
+		},
+		{
+			"type": "select",
+			"condition": "self.bgstyle == \"colored\"",
+			"name": "Hintergrundfarbe",
+			"property": "backgroundColor",
+			"description": "welche Hintergrundfarbe soll das Element haben?",
+			"options": [
+				{
+					"label": "weiß",
+					"value": "bg-white"
+				},
+				{
+					"label": "schwarz",
+					"value": "bg-black"
+				},
+				{
+					"label": "blau",
+					"value": "bg-primary"
+				},
+				{
+					"label": "grau",
+					"value": "bg-gray"
+				},
+				{
+					"label": "hellgrau",
+					"value": "bg-gray-light"
+				},
+				{
+					"label": "hellstes grau",
+					"value": "bg-gray-lighter"
+				},
+				{
+					"label": "dunkelgrau",
+					"value": "bg-gray-dark"
+				},
+				{
+					"label": "dunkel",
+					"value": "bg-dark"
+				}
+			]
+		}
+	]
+}

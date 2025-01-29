@@ -1,0 +1,10 @@
+
+@mixin fa($var) {
+// Empty definition or custom implementation
+}
+@mixin far($var) {
+// Empty definition or custom implementation
+}
+@mixin fas($var) {
+// Empty definition or custom implementation
+}

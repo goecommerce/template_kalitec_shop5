@@ -1,0 +1,473 @@
+/**
+ * Bootstrap-Grid Drop
+ * @docs https://kreativkonzentrat.de/Wiki?page=dropper/dev/config
+ * @generator https://kreativkonzentrat.de/Drop-Builder
+ */ 
+{
+	"name": "Bootstrap-Grid",
+	"description": "erstellt schnell und einfach Bootstrap-Grids",
+	"version": "1.0.0",
+	"builder": {
+		"namespace": "GOE"
+	},
+	"settings": [
+		{
+			"type": "list",
+			"itemSettings": [
+				{
+					"type": "list",
+					"itemSettings": [
+						{
+							"type": "html",
+							"name": "Inhalt",
+							"description": "Inhalt der Col",
+							"property": "content"
+						},
+						{
+							"type": "select",
+							"options": [
+								{
+									"label": "col-auto",
+									"value": "col-auto"
+								},
+								{
+									"label": "col-12",
+									"value": "col-12"
+								},
+								{
+									"label": "col-11",
+									"value": "col-11"
+								},
+								{
+									"label": "col-10",
+									"value": "col-10"
+								},
+								{
+									"label": "col-9",
+									"value": "col-9"
+								},
+								{
+									"label": "col-8",
+									"value": "col-8"
+								},
+								{
+									"label": "col-7",
+									"value": "col-7"
+								},
+								{
+									"label": "col-6",
+									"value": "col-6"
+								},
+								{
+									"label": "col-5",
+									"value": "col-5"
+								},
+								{
+									"label": "col-4",
+									"value": "col-4"
+								},
+								{
+									"label": "col-3",
+									"value": "col-3"
+								},
+								{
+									"label": "col-2",
+									"value": "col-2"
+								}
+							],
+							"name": "Generelle Col-Breite",
+							"description": "wie breit soll diese col sein, ohne responsive-angaben?",
+							"property": "colwidth"
+						},
+						{
+							"type": "select",
+							"options": [
+								{
+									"label": "col-md-12",
+									"value": "col-md-12"
+								},
+								{
+									"label": "col-md-11",
+									"value": "col-md-11"
+								},
+								{
+									"label": "col-md-10",
+									"value": "col-md-10"
+								},
+								{
+									"label": "col-md-9",
+									"value": "col-md-9"
+								},
+								{
+									"label": "col-md-8",
+									"value": "col-md-8"
+								},
+								{
+									"label": "col-md-7",
+									"value": "col-md-7"
+								},
+								{
+									"label": "col-md-6",
+									"value": "col-md-6"
+								},
+								{
+									"label": "col-md-5",
+									"value": "col-md-5"
+								},
+								{
+									"label": "col-md-4",
+									"value": "col-md-4"
+								},
+								{
+									"label": "col-md-3",
+									"value": "col-md-3"
+								},
+								{
+									"label": "col-md-2",
+									"value": "col-md-2"
+								}
+							],
+							"name": "MD Col-Breite",
+							"description": "wie breit soll diese col sein im MD viewport",
+							"property": "colwidthmd"
+						},
+						{
+							"type": "select",
+							"options": [
+								{
+									"label": "col-lg-12",
+									"value": "col-lg-12"
+								},
+								{
+									"label": "col-lg-11",
+									"value": "col-lg-11"
+								},
+								{
+									"label": "col-lg-10",
+									"value": "col-lg-10"
+								},
+								{
+									"label": "col-lg-9",
+									"value": "col-lg-9"
+								},
+								{
+									"label": "col-lg-8",
+									"value": "col-lg-8"
+								},
+								{
+									"label": "col-lg-7",
+									"value": "col-lg-7"
+								},
+								{
+									"label": "col-lg-6",
+									"value": "col-lg-6"
+								},
+								{
+									"label": "col-lg-5",
+									"value": "col-lg-5"
+								},
+								{
+									"label": "col-lg-4",
+									"value": "col-lg-4"
+								},
+								{
+									"label": "col-lg-3",
+									"value": "col-lg-3"
+								},
+								{
+									"label": "col-lg-2",
+									"value": "col-lg-2"
+								}
+							],
+							"name": "LG Col-Breite",
+							"description": "wie breit soll diese col sein im LG viewport",
+							"property": "colwidthlg"
+						},
+						{
+							"type": "select",
+							"options": [
+								{
+									"label": "col-xl-12",
+									"value": "col-xl-12"
+								},
+								{
+									"label": "col-xl-11",
+									"value": "col-xl-11"
+								},
+								{
+									"label": "col-xl-10",
+									"value": "col-xl-10"
+								},
+								{
+									"label": "col-xl-9",
+									"value": "col-xl-9"
+								},
+								{
+									"label": "col-xl-8",
+									"value": "col-xl-8"
+								},
+								{
+									"label": "col-xl-7",
+									"value": "col-xl-7"
+								},
+								{
+									"label": "col-xl-6",
+									"value": "col-xl-6"
+								},
+								{
+									"label": "col-xl-5",
+									"value": "col-xl-5"
+								},
+								{
+									"label": "col-xl-4",
+									"value": "col-xl-4"
+								},
+								{
+									"label": "col-xl-3",
+									"value": "col-xl-3"
+								},
+								{
+									"label": "col-xl-2",
+									"value": "col-xl-2"
+								}
+							],
+							"name": "XL Col-Breite",
+							"description": "wie breit soll diese col sein im XL viewport",
+							"property": "colwidthxl"
+						},
+						{
+							"type": "multiselect",
+							"options": [
+								{
+									"label": "offset-11",
+									"value": "offset-11"
+								},
+								{
+									"label": "offset-10",
+									"value": "offset-10"
+								},
+								{
+									"label": "offset-9",
+									"value": "offset-9"
+								},
+								{
+									"label": "offset-8",
+									"value": "offset-8"
+								},
+								{
+									"label": "offset-7",
+									"value": "offset-7"
+								},
+								{
+									"label": "offset-6",
+									"value": "offset-6"
+								},
+								{
+									"label": "offset-5",
+									"value": "offset-5"
+								},
+								{
+									"label": "offset-4",
+									"value": "offset-4"
+								},
+								{
+									"label": "offset-3",
+									"value": "offset-3"
+								},
+								{
+									"label": "offset-2",
+									"value": "offset-2"
+								},
+								{
+									"label": "offset-1",
+									"value": "offset-1"
+								},
+								{
+									"label": "offset-md-11",
+									"value": "offset-md-11"
+								},
+								{
+									"label": "offset-md-10",
+									"value": "offset-md-10"
+								},
+								{
+									"label": "offset-md-9",
+									"value": "offset-md-9"
+								},
+								{
+									"label": "offset-md-8",
+									"value": "offset-md-8"
+								},
+								{
+									"label": "offset-md-7",
+									"value": "offset-md-7"
+								},
+								{
+									"label": "offset-md-6",
+									"value": "offset-md-6"
+								},
+								{
+									"label": "offset-md-5",
+									"value": "offset-md-5"
+								},
+								{
+									"label": "offset-md-4",
+									"value": "offset-md-4"
+								},
+								{
+									"label": "offset-md-3",
+									"value": "offset-md-3"
+								},
+								{
+									"label": "offset-md-2",
+									"value": "offset-md-2"
+								},
+								{
+									"label": "offset-md-1",
+									"value": "offset-md-1"
+								},
+								{
+									"label": "offset-lg-11",
+									"value": "offset-lg-11"
+								},
+								{
+									"label": "offset-lg-10",
+									"value": "offset-lg-10"
+								},
+								{
+									"label": "offset-lg-9",
+									"value": "offset-lg-9"
+								},
+								{
+									"label": "offset-lg-8",
+									"value": "offset-lg-8"
+								},
+								{
+									"label": "offset-lg-7",
+									"value": "offset-lg-7"
+								},
+								{
+									"label": "offset-lg-6",
+									"value": "offset-lg-6"
+								},
+								{
+									"label": "offset-lg-5",
+									"value": "offset-lg-5"
+								},
+								{
+									"label": "offset-lg-4",
+									"value": "offset-lg-4"
+								},
+								{
+									"label": "offset-lg-3",
+									"value": "offset-lg-3"
+								},
+								{
+									"label": "offset-lg-2",
+									"value": "offset-lg-2"
+								},
+								{
+									"label": "offset-lg-1",
+									"value": "offset-lg-1"
+								},
+								{
+									"label": "offset-xl-11",
+									"value": "offset-xl-11"
+								},
+								{
+									"label": "offset-xl-10",
+									"value": "offset-xl-10"
+								},
+								{
+									"label": "offset-xl-9",
+									"value": "offset-xl-9"
+								},
+								{
+									"label": "offset-xl-8",
+									"value": "offset-xl-8"
+								},
+								{
+									"label": "offset-xl-7",
+									"value": "offset-xl-7"
+								},
+								{
+									"label": "offset-xl-6",
+									"value": "offset-xl-6"
+								},
+								{
+									"label": "offset-xl-5",
+									"value": "offset-xl-5"
+								},
+								{
+									"label": "offset-xl-4",
+									"value": "offset-xl-4"
+								},
+								{
+									"label": "offset-xl-3",
+									"value": "offset-xl-3"
+								},
+								{
+									"label": "offset-xl-2",
+									"value": "offset-xl-2"
+								},
+								{
+									"label": "offset-xl-1",
+									"value": "offset-xl-1"
+								}
+							],
+							"name": "Offset und andere Features",
+							"description": "verschiedene zusätzliche Features, mit bedacht wählen!",
+							"property": "offset"
+						},
+						{
+							"type": "text",
+							"name": "zusätzliche Klasse(n)",
+							"description": "Eingabe ohne Punkte.",
+							"property": "classes"
+						},
+						{
+							"type": "text",
+							"name": "ID",
+							"description": "Eingabe einer ID",
+							"property": "hash"
+						}
+					],
+					"itemDefaults": {
+						"offset": []
+					},
+					"name": "Col",
+					"description": "erzeugt eine neue Col",
+					"property": "col"
+				},
+				{
+					"type": "text",
+					"name": "ID",
+					"description": "Eingabe einer eindeutigen ID",
+					"property": "hash"
+				},
+				{
+					"type": "text",
+					"name": "Zusätzliche CSS-Klasse(n)",
+					"description": "Eingabe ohne Punkt(e)",
+					"property": "classes"
+				}
+			],
+			"itemDefaults": {},
+			"name": "Row",
+			"description": "erzeugt eine leere row",
+			"property": "row"
+		},
+		{
+			"type": "text",
+			"name": "ID",
+			"description": "eindeutige ID der des containers",
+			"property": "hash"
+		},
+		{
+			"type": "text",
+			"name": "Zusätzliche Klasse(n)",
+			"description": "Eingabe mit leerzeichen, ohne Punkt(e)",
+			"property": "classes"
+		}
+	]
+}

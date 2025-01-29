@@ -1,0 +1,3 @@
+@mixin fa($var) { content: #{"'\\" + $var + "'"} !important; font-family: 'asdf' !important; }
+@mixin far($var) { @include fa($var); font-weight: 400; }
+@mixin fas($var) { @include fa($var); font-weight: 900; }
